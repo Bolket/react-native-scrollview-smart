@@ -3,10 +3,20 @@ import React, {
   Component,
 } from 'react';
 import {
+  StyleSheet,
   View,
+  findNodeHandle,
   TextInput,
 } from 'react-native';
 import { ScrollViewSmart } from 'react-native-scrollview-smart';
+
+var styles = StyleSheet.create({
+  default: {
+    height: 65,
+    borderWidth: 1,
+    borderColor: '#0f0f0f',
+  },
+});
 
 class Example extends Component {
 
@@ -29,9 +39,13 @@ class Example extends Component {
         ref={'scroll'}
         extraSpace={25}
       >
-        <View style={{ flex: 1, margin: 20, marginTop: 100 }}>
+        <View style={{ marginTop: 70, height: 100, backgroundColor: 'black' }}>
+        </View>
+        <View style={{ flex: 1, marginTop: 50 }}>
           <TextInput
             ref={'input1'}
+            placeholder={'INPUT'}
+            style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input2.focus(); }}
@@ -39,6 +53,8 @@ class Example extends Component {
           />
           <TextInput
             ref={'input2'}
+            placeholder={'INPUT'}
+            style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input3.focus(); }}
@@ -46,6 +62,8 @@ class Example extends Component {
           />
           <TextInput
             ref={'input3'}
+            placeholder={'INPUT'}
+            style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input4.focus(); }}
@@ -53,6 +71,8 @@ class Example extends Component {
           />
           <TextInput
             ref={'input4'}
+            placeholder={'INPUT'}
+            style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input5.focus(); }}
@@ -60,9 +80,10 @@ class Example extends Component {
           />
           <TextInput
             ref={'input5'}
+            placeholder={'INPUT'}
+            style={styles.default}
             keyboardType={'default'}
             returnKeyType={'done'}
-            onSubmitEditing={() => { this.refs.input2.focus(); }}
             onFocus={this.scrollOnFocus(64, 'input5')}
             blurOnSubmit={true}
           />

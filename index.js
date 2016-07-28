@@ -1,4 +1,4 @@
-import ScrollViewSmart from './src/ScrollViewSmart';
+import ScrollViewSmart from './lib/ScrollViewSmart';
 
 export {
   ScrollViewSmart,

@@ -1,0 +1,26 @@
+{
+  "name": "react-native-scrollview-smart",
+  "version": "0.0.1-rc",
+  "description": "Smart ScrollView for IOS and Android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarovin/react-native-scrollview-smart.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "scrollview",
+    "android",
+    "ios"
+  ],
+  "author": "Saro Vindigni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarovin/react-native-scrollview-smart/issues"
+  },
+  "homepage": "https://github.com/sarovin/react-native-scrollview-smart#readme"
+}

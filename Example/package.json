@@ -21,9 +21,6 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-native": "^0.28.0",
-    "react-native-floating-label": "^0.2.3",
-    "react-native-scrollview-smart": "file:../",
-    "tcomb-form-native": "^0.6.0",
-    "world-countries": "^1.7.8"
+    "react-native-scrollview-smart": "file:../"
   }
 }

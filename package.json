@@ -17,7 +17,6 @@
     "android",
     "ios"
   ],
-  "nativePackage": true,
   "author": {
     "name": "Saro Vindigni",
     "email": "sarovin86@gmail.com"

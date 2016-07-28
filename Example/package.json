@@ -19,7 +19,7 @@
   "author": "Saro Vindigni",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.1.0",
+    "react": "15.2.1",
     "react-native": "^0.28.0",
     "react-native-scrollview-smart": "file:../"
   }

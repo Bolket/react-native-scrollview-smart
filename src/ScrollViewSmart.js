@@ -8,6 +8,7 @@ import {
   ScrollView,
   View,
 } from 'react-native';
+import AndroidKeyboardAwareScrollView = requireNativeComponent('AndroidKeyboardAwareScrollView', ScrollViewSmart);
 
 const propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
@@ -84,18 +85,33 @@ class ScrollViewSmart extends Component {
   }
 
   render() {
-    return (
-      <ScrollView
+    if (Platform.OS === 'ios') {
+      return (
+        <ScrollView
+          ref={'scrollView'}
+          keyboardShouldPersistTaps
+          keyboardDismissMode={'interactive'}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ flex: 1 }}
+        >
+          {this.props.children}
+          <View style={{ height: this.state.keyboardSpace, left: 0, right: 0, bottom: 0 }} />
+        </ScrollView>
+      );
+    } else {
+      <AndroidKeyboardAwareScrollView
         ref={'scrollView'}
         keyboardShouldPersistTaps
         keyboardDismissMode={'interactive'}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flex: 1 }}
       >
-        {this.props.children}
+        <View collapsable={false}>
+          {this.props.children}
+        </View>
         <View style={{ height: this.state.keyboardSpace, left: 0, right: 0, bottom: 0 }} />
-      </ScrollView>
-    );
+      </AndroidKeyboardAwareScrollView>
+    }
   }
 }
 

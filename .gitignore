@@ -29,9 +29,9 @@ project.xcworkspace
 # Gradle
 /build/
 /Example/android/app/build/
-/Examples/android/app/gradle/
-/Examples/android/app/gradlew
-/Examples/android/app/gradlew.bat
+/Example/android/app/gradle/
+/Example/android/app/gradlew
+/Example/android/app/gradlew.bat
 
 # Android
 .idea

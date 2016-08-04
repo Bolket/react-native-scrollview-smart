@@ -5,12 +5,13 @@ import React, {
 import {
   StyleSheet,
   View,
+  Text,
   findNodeHandle,
   TextInput,
 } from 'react-native';
 import { ScrollViewSmart } from 'react-native-scrollview-smart';
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   default: {
     height: 65,
     borderWidth: 1,
@@ -20,8 +21,8 @@ var styles = StyleSheet.create({
 
 class Example extends Component {
 
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
     this.scrollOnFocus = this.scrollOnFocus.bind(this);
   }
 
@@ -39,7 +40,17 @@ class Example extends Component {
         ref={'scroll'}
         extraSpace={25}
       >
-        <View style={{ marginTop: 70, height: 100, backgroundColor: 'black' }}>
+        <View style={{ height: 200, backgroundColor: 'black' }} >
+          <Text
+            style={{
+              marginTop: 60,
+              color: 'white',
+              textAlign: 'center',
+              fontSize: 40,
+            }}
+          >
+            TEST
+          </Text>
         </View>
         <View style={{ flex: 1, marginTop: 50 }}>
           <TextInput
@@ -85,7 +96,7 @@ class Example extends Component {
             keyboardType={'default'}
             returnKeyType={'done'}
             onFocus={this.scrollOnFocus(64, 'input5')}
-            blurOnSubmit={true}
+            blurOnSubmit
           />
         </View>
       </ScrollViewSmart>

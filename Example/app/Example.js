@@ -25,11 +25,9 @@ class Example extends Component {
     this.scrollOnFocus = this.scrollOnFocus.bind(this);
   }
 
-  scrollOnFocus = (height, inputName, event) => () => {
+  scrollOnFocus = (inputName) => () => {
     this.refs.scroll.inputFocused(
-      event,
       findNodeHandle(this.refs[inputName]),
-      height,
     );
   }
 
@@ -37,7 +35,6 @@ class Example extends Component {
     return (
       <ScrollViewSmart
         ref={'scroll'}
-        extraSpace={25}
       >
         <View style={{ height: 200, backgroundColor: 'black' }} >
           <Text
@@ -59,7 +56,7 @@ class Example extends Component {
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input2.focus(); }}
-            onFocus={this.scrollOnFocus(64, 'input1')}
+            onFocus={this.scrollOnFocus('input1')}
           />
           <TextInput
             ref={'input2'}
@@ -68,7 +65,7 @@ class Example extends Component {
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input3.focus(); }}
-            onFocus={this.scrollOnFocus(64, 'input2')}
+            onFocus={this.scrollOnFocus('input2')}
           />
           <TextInput
             ref={'input3'}
@@ -77,7 +74,7 @@ class Example extends Component {
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input4.focus(); }}
-            onFocus={this.scrollOnFocus(64, 'input3')}
+            onFocus={this.scrollOnFocus('input3')}
           />
           <TextInput
             ref={'input4'}
@@ -86,7 +83,7 @@ class Example extends Component {
             keyboardType={'default'}
             returnKeyType={'next'}
             onSubmitEditing={() => { this.refs.input5.focus(); }}
-            onFocus={this.scrollOnFocus(64, 'input4')}
+            onFocus={this.scrollOnFocus('input4')}
           />
           <TextInput
             ref={'input5'}
@@ -94,7 +91,7 @@ class Example extends Component {
             style={styles.default}
             keyboardType={'default'}
             returnKeyType={'done'}
-            onFocus={this.scrollOnFocus(64, 'input5')}
+            onFocus={this.scrollOnFocus('input5')}
             blurOnSubmit
           />
         </View>

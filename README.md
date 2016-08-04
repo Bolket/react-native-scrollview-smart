@@ -9,5 +9,5 @@ npm i react-native-scrollview-smart --save
 
 ## Demo
 <p align="center">
-  <img src ="https://raw.githubusercontent.com/sarovin/react-native-prefix-picker/master/Demo.gif" />
+  <img src ="https://raw.githubusercontent.com/sarovin/react-native-scrollview-smart/master/Demo.gif" />
 </p>

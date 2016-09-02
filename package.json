@@ -1,6 +1,6 @@
 {
   "name": "react-native-scrollview-smart",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Smart ScrollView for IOS and Android",
   "main": "index.js",
   "scripts": {

@@ -31,19 +31,19 @@ class Example extends Component {
     this.scrollOnFocus = this.scrollOnFocus.bind(this);
   }
 
-  scrollOnFocus = (inputName) => () => {
-    this.refs.scroll.inputFocused(
-      findNodeHandle(this.refs[inputName]),
+  scrollOnFocus = inputName => () => {
+    this.scroll.inputFocused(
+      findNodeHandle(this[inputName]),
     );
   }
 
   render() {
     return (
       <ScrollViewSmart
-        ref={'scroll'}
+        ref={e => (this.scroll = e)}
       >
         <TextInput
-          ref={'input'}
+          ref={e => (this.input = e)}
           onFocus={this.scrollOnFocus('input')}
         />
         // ...

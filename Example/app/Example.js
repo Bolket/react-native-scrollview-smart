@@ -26,15 +26,15 @@ class Example extends Component {
   }
 
   scrollOnFocus = (inputName) => () => {
-    this.refs.scroll.inputFocused(
-      findNodeHandle(this.refs[inputName]),
+    this.scroll.inputFocused(
+      findNodeHandle(this.[inputName]),
     );
   }
 
   render() {
     return (
       <ScrollViewSmart
-        ref={'scroll'}
+        ref={e => (this.scroll = e)}
       >
         <View style={{ height: 200, backgroundColor: 'black' }} >
           <Text
@@ -50,43 +50,43 @@ class Example extends Component {
         </View>
         <View style={{ flex: 1, marginTop: 50 }}>
           <TextInput
-            ref={'input1'}
+            ref={e => (this.input1 = e)}
             placeholder={'INPUT'}
             style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
-            onSubmitEditing={() => { this.refs.input2.focus(); }}
+            onSubmitEditing={() => { this.input2.focus(); }}
             onFocus={this.scrollOnFocus('input1')}
           />
           <TextInput
-            ref={'input2'}
+            ref={e => (this.input2 = e)}
             placeholder={'INPUT'}
             style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
-            onSubmitEditing={() => { this.refs.input3.focus(); }}
+            onSubmitEditing={() => { this.input3.focus(); }}
             onFocus={this.scrollOnFocus('input2')}
           />
           <TextInput
-            ref={'input3'}
+            ref={e => (this.input3 = e)}
             placeholder={'INPUT'}
             style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
-            onSubmitEditing={() => { this.refs.input4.focus(); }}
+            onSubmitEditing={() => { this.input4.focus(); }}
             onFocus={this.scrollOnFocus('input3')}
           />
           <TextInput
-            ref={'input4'}
+            ref={e => (this.input4 = e)}
             placeholder={'INPUT'}
             style={styles.default}
             keyboardType={'default'}
             returnKeyType={'next'}
-            onSubmitEditing={() => { this.refs.input5.focus(); }}
+            onSubmitEditing={() => { this.input5.focus(); }}
             onFocus={this.scrollOnFocus('input4')}
           />
           <TextInput
-            ref={'input5'}
+            ref={e => (this.input5 = e)}
             placeholder={'INPUT'}
             style={styles.default}
             keyboardType={'default'}

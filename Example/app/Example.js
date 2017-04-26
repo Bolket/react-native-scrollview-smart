@@ -25,9 +25,9 @@ class Example extends Component {
     this.scrollOnFocus = this.scrollOnFocus.bind(this);
   }
 
-  scrollOnFocus = (inputName) => () => {
+  scrollOnFocus = inputName => () => {
     this.scroll.inputFocused(
-      findNodeHandle(this.[inputName]),
+      findNodeHandle(this[inputName]),
     );
   }
 

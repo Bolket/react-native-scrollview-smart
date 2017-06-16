@@ -1,4 +1,4 @@
-# React Native Scrollview Smart [![react-native-scrollview-smart](https://img.shields.io/npm/dt/react-native-scrollview-smart.svg?style=flat)](https://www.npmjs.org/package/react-native-scrollview-smart) [![npm version](https://img.shields.io/npm/v/react-native-scrollview-smart.svg?style=flat)](https://www.npmjs.com/package/react-native-scrollview-smart)
+# React Native Scrollview Smart [![CircleCI](https://circleci.com/gh/Bolket/react-native-scrollview-smart.svg?style=svg)](https://circleci.com/gh/Bolket/react-native-scrollview-smart) [![react-native-scrollview-smart](https://img.shields.io/npm/dt/react-native-scrollview-smart.svg?style=flat)](https://www.npmjs.org/package/react-native-scrollview-smart) [![npm version](https://img.shields.io/npm/v/react-native-scrollview-smart.svg?style=flat)](https://www.npmjs.com/package/react-native-scrollview-smart)
 A smart iOS and Android scrollview for React Native
 
 ## INSTALLATION

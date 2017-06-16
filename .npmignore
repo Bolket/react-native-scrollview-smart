@@ -3,4 +3,4 @@ Example/
 .babelrc
 .eslintrc.js
 .editorconfig
-.circle.yml
+circle.yml

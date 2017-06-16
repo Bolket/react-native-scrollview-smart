@@ -361,7 +361,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^20.0.3:
+babel-jest@20.0.3, babel-jest@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-20.0.3.tgz#e4a03b13dc10389e140fc645d09ffc4ced301671"
   dependencies:
@@ -695,8 +695,8 @@ babel-preset-fbjs@^1.0.0:
     object-assign "^4.0.1"
 
 babel-preset-fbjs@^2.1.2:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/babel-preset-fbjs/-/babel-preset-fbjs-2.1.3.tgz#005197cd2ce06fc36cb493071b15d715bd99c227"
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/babel-preset-fbjs/-/babel-preset-fbjs-2.1.4.tgz#22f358e6654073acf61e47a052a777d7bccf03af"
   dependencies:
     babel-plugin-check-es2015-constants "^6.8.0"
     babel-plugin-syntax-class-properties "^6.8.0"
@@ -733,7 +733,7 @@ babel-preset-jest@^20.0.3:
   dependencies:
     babel-plugin-jest-hoist "^20.0.3"
 
-babel-preset-react-native@^1.9.1:
+babel-preset-react-native@1.9.2, babel-preset-react-native@^1.9.1:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-1.9.2.tgz#b22addd2e355ff3b39671b79be807e52dfa145f2"
   dependencies:
@@ -2336,9 +2336,9 @@ jest-changed-files@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-20.0.3.tgz#9394d5cc65c438406149bef1bf4d52b68e03e3f8"
 
-jest-cli@^20.0.4:
-  version "20.0.4"
-  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-20.0.4.tgz#e532b19d88ae5bc6c417e8b0593a6fe954b1dc93"
+jest-cli@20.0.3, jest-cli@^20.0.3:
+  version "20.0.3"
+  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-20.0.3.tgz#fe88ddbb7a9f3a16d0ed55339a0a2424f7f0d361"
   dependencies:
     ansi-escapes "^1.4.0"
     callsites "^2.0.0"
@@ -2350,15 +2350,15 @@ jest-cli@^20.0.4:
     istanbul-lib-instrument "^1.4.2"
     istanbul-lib-source-maps "^1.1.0"
     jest-changed-files "^20.0.3"
-    jest-config "^20.0.4"
+    jest-config "^20.0.3"
     jest-docblock "^20.0.3"
     jest-environment-jsdom "^20.0.3"
-    jest-haste-map "^20.0.4"
-    jest-jasmine2 "^20.0.4"
+    jest-haste-map "^20.0.3"
+    jest-jasmine2 "^20.0.3"
     jest-message-util "^20.0.3"
     jest-regex-util "^20.0.3"
     jest-resolve-dependencies "^20.0.3"
-    jest-runtime "^20.0.4"
+    jest-runtime "^20.0.3"
     jest-snapshot "^20.0.3"
     jest-util "^20.0.3"
     micromatch "^2.3.11"
@@ -2371,7 +2371,7 @@ jest-cli@^20.0.4:
     worker-farm "^1.3.1"
     yargs "^7.0.2"
 
-jest-config@^20.0.4:
+jest-config@^20.0.3, jest-config@^20.0.4:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-20.0.4.tgz#e37930ab2217c913605eff13e7bd763ec48faeea"
   dependencies:
@@ -2414,7 +2414,7 @@ jest-environment-node@^20.0.3:
     jest-mock "^20.0.3"
     jest-util "^20.0.3"
 
-jest-haste-map@^20.0.4:
+jest-haste-map@^20.0.3, jest-haste-map@^20.0.4:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-20.0.4.tgz#653eb55c889ce3c021f7b94693f20a4159badf03"
   dependencies:
@@ -2425,7 +2425,7 @@ jest-haste-map@^20.0.4:
     sane "~1.6.0"
     worker-farm "^1.3.1"
 
-jest-jasmine2@^20.0.4:
+jest-jasmine2@^20.0.3, jest-jasmine2@^20.0.4:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-20.0.4.tgz#fcc5b1411780d911d042902ef1859e852e60d5e1"
   dependencies:
@@ -2467,7 +2467,7 @@ jest-mock@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-20.0.3.tgz#8bc070e90414aa155c11a8d64c869a0d5c71da59"
 
-jest-react-native@^18.0.0:
+jest-react-native@18.0.0:
   version "18.0.0"
   resolved "https://registry.yarnpkg.com/jest-react-native/-/jest-react-native-18.0.0.tgz#77dd909f069324599f227c58c61c2e62168726ba"
 
@@ -2489,7 +2489,7 @@ jest-resolve@^20.0.4:
     is-builtin-module "^1.0.0"
     resolve "^1.3.2"
 
-jest-runtime@^20.0.4:
+jest-runtime@^20.0.3:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-20.0.4.tgz#a2c802219c4203f754df1404e490186169d124d8"
   dependencies:
@@ -2541,11 +2541,11 @@ jest-validate@^20.0.3:
     leven "^2.1.0"
     pretty-format "^20.0.3"
 
-jest@^20.0.4:
-  version "20.0.4"
-  resolved "https://registry.yarnpkg.com/jest/-/jest-20.0.4.tgz#3dd260c2989d6dad678b1e9cc4d91944f6d602ac"
+jest@20.0.3:
+  version "20.0.3"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-20.0.3.tgz#e4fd054c4f1170a116a00761da4cfdb73f1cdc33"
   dependencies:
-    jest-cli "^20.0.4"
+    jest-cli "^20.0.3"
 
 joi@^6.6.1:
   version "6.10.1"
@@ -3365,9 +3365,12 @@ raw-body@~2.1.2:
     iconv-lite "0.4.13"
     unpipe "1.0.0"
 
-react-addons-test-utils@^15.1.0:
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.0.tgz#062d36117fe8d18f3ba5e06eb33383b0b85ea5b9"
+react-addons-test-utils@16.0.0-alpha.3:
+  version "16.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-16.0.0-alpha.3.tgz#c17796f9b2c527b6be56f8d783b38020513fdb42"
+  dependencies:
+    fbjs "^0.8.9"
+    object-assign "^4.1.0"
 
 react-clone-referenced-element@^1.0.1:
   version "1.0.1"
@@ -3488,9 +3491,9 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-test-renderer@^15.6.1:
-  version "15.6.1"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.6.1.tgz#026f4a5bb5552661fd2cc4bbcd0d4bc8a35ebf7e"
+react-test-renderer@16.0.0-alpha.12:
+  version "16.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0-alpha.12.tgz#9e4cc5d8ce8bfca72778340de3e1454b9d6c0cc5"
   dependencies:
     fbjs "^0.8.9"
     object-assign "^4.1.0"

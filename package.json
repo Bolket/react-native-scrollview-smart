@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "node_modules/eslint/bin/eslint.js lib/ScrollViewSmart",
-    "jest": "jest lib/",
+    "jest": "jest",
     "test": "yarn eslint && yarn jest"
   },
   "repository": {
@@ -31,7 +31,6 @@
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.4",
-    "babel-jest": "^20.0.3",
     "babel-polyfill": "^6.9.1",
     "babel-register": "^6.9.0",
     "eslint": "^2.11.1",
@@ -39,19 +38,29 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
-    "jest": "^20.0.4",
-    "jest-cli": "^20.0.4",
-    "jest-react-native": "^18.0.0",
-    "react-addons-test-utils": "^15.1.0",
-    "react-test-renderer": "^15.6.1"
+    "jest-cli": "20.0.3",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "1.9.2",
+    "jest": "20.0.3",
+    "jest-react-native": "18.0.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "react-addons-test-utils": "16.0.0-alpha.3"
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "16.0.0-alpha.12",
     "react-dom": "16.0.0-alpha.12",
-    "react-native": "^0.45.1"
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1"
   },
   "jest": {
-    "preset": "jest-react-native"
+    "notify": true,
+    "preset": "jest-react-native",
+    "roots": [
+      "./lib"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "collectCoverage": false
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-native-scrollview-smart",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Smart ScrollView for IOS and Android",
   "main": "index.js",
   "scripts": {
@@ -12,13 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/sarovin/react-native-scrollview-smart.git"
   },
-  "keywords": [
-    "react",
-    "native",
-    "scrollview",
-    "android",
-    "ios"
-  ],
+  "keywords": ["react", "native", "scrollview", "android", "ios"],
   "author": {
     "name": "Saro Vindigni",
     "email": "sarovin86@gmail.com"
@@ -54,7 +48,6 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*",
     "react-native": "*"
   },
   "jest": {

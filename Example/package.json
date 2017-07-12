@@ -1,21 +1,9 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "description": "example for react native prefix picker",
+  "description": "example",
   "main": "index.js",
-  "scripts": {
-    "test": "../node_modules/eslint/bin/eslint.js ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sarovin/react-native-prefix-picker/Example"
-  },
-  "keywords": [
-    "react",
-    "react-native",
-    "picker",
-    "prefix"
-  ],
+  "keywords": ["react", "react-native", "scrollview"],
   "author": "Saro Vindigni",
   "license": "MIT",
   "dependencies": {

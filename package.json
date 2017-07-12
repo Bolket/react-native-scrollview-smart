@@ -4,7 +4,9 @@
   "description": "Smart ScrollView for IOS and Android",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/eslint/bin/eslint.js lib/"
+    "eslint": "node_modules/eslint/bin/eslint.js lib/ScrollViewSmart",
+    "jest": "jest",
+    "test": "yarn eslint && yarn jest"
   },
   "repository": {
     "type": "git",
@@ -29,21 +31,33 @@
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.4",
+    "babel-jest": "20.0.3",
     "babel-polyfill": "^6.9.1",
-    "babel-preset-react-native": "^1.9.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react-native": "1.9.2",
     "babel-register": "^6.9.0",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
-    "jest": "^20.0.4",
-    "react-addons-test-utils": "^15.1.0"
+    "jest-cli": "20.0.4",
+    "jest-react-native": "18.0.0",
+    "react": "16.0.0-alpha.12",
+    "react-addons-test-utils": "16.0.0-alpha.3",
+    "react-dom": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "dependencies": {
-    "prop-types": "^15.5.8",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-native": "^0.28.0"
+    "prop-types": "^15.5.10"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }

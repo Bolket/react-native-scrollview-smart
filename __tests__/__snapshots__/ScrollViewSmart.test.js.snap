@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  extraSpace={0}
+  keyboardDismissMode="interactive"
+  keyboardShouldPersistTaps="always"
+  nodeHeight={64}
+  showsVerticalScrollIndicator={false}
+  tabFooter={0}
+>
+  <View>
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;

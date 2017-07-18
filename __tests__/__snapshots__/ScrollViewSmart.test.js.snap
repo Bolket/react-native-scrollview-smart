@@ -1,22 +1,164 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ScrollViewSmart renders correctly 1`] = `
-<RCTScrollView
-  extraSpace={0}
-  keyboardDismissMode="interactive"
-  keyboardShouldPersistTaps="always"
-  nodeHeight={64}
-  showsVerticalScrollIndicator={false}
-  tabFooter={0}
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <ScrollViewMock
+    extraSpace={0}
+    keyboardDismissMode="interactive"
+    keyboardShouldPersistTaps="always"
+    nodeHeight={64}
+    showsVerticalScrollIndicator={false}
+    tabFooter={0}
 >
-  <View>
     <View
-      style={
-        Object {
-          "height": 0,
+        style={
+            Object {
+                "flex": 1,
+                "marginTop": 50,
+              }
         }
-      }
+    >
+        <TextInput />
+    </View>
+    <View
+        style={
+            Object {
+                "height": 0,
+              }
+        }
     />
-  </View>
-</RCTScrollView>
+</ScrollViewMock>,
+  "nodes": Array [
+    <ScrollViewMock
+      extraSpace={0}
+      keyboardDismissMode="interactive"
+      keyboardShouldPersistTaps="always"
+      nodeHeight={64}
+      showsVerticalScrollIndicator={false}
+      tabFooter={0}
+>
+      <View
+            style={
+                  Object {
+                        "flex": 1,
+                        "marginTop": 50,
+                      }
+            }
+      >
+            <TextInput />
+      </View>
+      <View
+            style={
+                  Object {
+                        "height": 0,
+                      }
+            }
+      />
+</ScrollViewMock>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <ScrollViewSmart
+      extraSpace={0}
+      nodeHeight={64}
+      tabFooter={0}
+>
+      <View
+            style={
+                  Object {
+                        "flex": 1,
+                        "marginTop": 50,
+                      }
+            }
+      >
+            <TextInput />
+      </View>
+</ScrollViewSmart>,
+    "_instance": ScrollViewSmart {
+      "context": Object {},
+      "inputFocused": [Function],
+      "props": Object {
+        "children": <View
+          style={
+                    Object {
+                              "flex": 1,
+                              "marginTop": 50,
+                            }
+          }
+>
+          <TextInput />
+</View>,
+        "extraSpace": 0,
+        "nodeHeight": 64,
+        "tabFooter": 0,
+      },
+      "refs": Object {},
+      "resetKeyboardSpace": [Function],
+      "state": Object {
+        "keyboardSpace": 0,
+      },
+      "updateKeyboardSpace": [Function],
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <ScrollViewMock
+      extraSpace={0}
+      keyboardDismissMode="interactive"
+      keyboardShouldPersistTaps="always"
+      nodeHeight={64}
+      showsVerticalScrollIndicator={false}
+      tabFooter={0}
+>
+      <View
+            style={
+                  Object {
+                        "flex": 1,
+                        "marginTop": 50,
+                      }
+            }
+      >
+            <TextInput />
+      </View>
+      <View
+            style={
+                  Object {
+                        "height": 0,
+                      }
+            }
+      />
+</ScrollViewMock>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ScrollViewSmart
+    extraSpace={0}
+    nodeHeight={64}
+    tabFooter={0}
+>
+    <View
+        style={
+            Object {
+                "flex": 1,
+                "marginTop": 50,
+              }
+        }
+    >
+        <TextInput />
+    </View>
+</ScrollViewSmart>,
+}
 `;

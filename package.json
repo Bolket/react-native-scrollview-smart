@@ -12,13 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/sarovin/react-native-scrollview-smart.git"
   },
-  "keywords": [
-    "react",
-    "native",
-    "scrollview",
-    "android",
-    "ios"
-  ],
+  "keywords": ["react", "native", "scrollview", "android", "ios"],
   "author": {
     "name": "Saro Vindigni",
     "email": "sarovin86@gmail.com"
@@ -36,7 +30,6 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react-native": "1.9.2",
     "babel-register": "^6.9.0",
-    "chai": "^4.1.0",
     "enzyme": "^2.9.1",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
@@ -59,6 +52,8 @@
     "react-native": "*"
   },
   "jest": {
-    "preset": "jest-react-native"
+    "preset": "jest-react-native",
+    "testPathIgnorePatterns": ["<rootDir>/Example/", "<rootDir>/node_modules/"],
+    "modulePathIgnorePatterns": ["<rootDir>/node_modules"]
   }
 }

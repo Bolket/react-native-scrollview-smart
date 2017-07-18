@@ -4,20 +4,13 @@
 
 import { View, TextInput } from 'react-native';
 import React from 'react';
-import { expect as expectChai, should } from 'chai';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
 import ScrollViewSmart from '../lib/ScrollViewSmart';
 
 describe('ScrollViewSmart', () => {
   let component;
   let bottomView;
   let textInput;
-
-  it('renders correctly', () => {
-    const tree = renderer.create(<ScrollViewSmart />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 
   beforeEach(() => {
     component = shallow(
@@ -31,21 +24,25 @@ describe('ScrollViewSmart', () => {
     textInput = component.find('TextInput');
   });
 
+  it('renders correctly', () => {
+    expect(component).toMatchSnapshot();
+  });
+
   it('it should render 1 component', () => {
-    expectChai(component).to.have.length(1);
+    expect(component).toHaveLength(1);
   });
 
   it('it should render 2 View component', () => {
-    expectChai(bottomView).to.have.length(2);
+    expect(bottomView).toHaveLength(2);
   });
 
   it('it should render 1 TextInput component', () => {
-    expectChai(textInput).to.have.length(1);
+    expect(textInput).toHaveLength(1);
   });
 
   it('should have props for title and address', () => {
-    expectChai(component.props().extraSpace).to.equal(0);
-    expectChai(component.props().nodeHeight).to.equal(64);
-    expectChai(component.props().tabFooter).to.equal(0);
+    expect(component.props().extraSpace).toEqual(0);
+    expect(component.props().nodeHeight).toEqual(64);
+    expect(component.props().tabFooter).toEqual(0);
   });
 });

@@ -51,6 +51,6 @@
     "react-native": "*"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-react-native"
   }
 }

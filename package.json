@@ -52,8 +52,6 @@
     "react-native": "*"
   },
   "jest": {
-    "preset": "jest-react-native",
-    "testPathIgnorePatterns": ["<rootDir>/Example/", "<rootDir>/node_modules/"],
-    "modulePathIgnorePatterns": ["<rootDir>/node_modules"]
+    "preset": "jest-react-native"
   }
 }
